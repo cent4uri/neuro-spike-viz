@@ -5,8 +5,6 @@ analyzing neural firing rates using publicly available neuroscience
 datasets. A beginner-friendly introduction to computational neuroscience,
 neural signal processing, and scientific data visualization.
 
-![Example output](images/example_output.png)
-
 ## Features
 
 - Visualize neuronal spike trains over time
