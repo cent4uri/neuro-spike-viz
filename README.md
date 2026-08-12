@@ -160,3 +160,5 @@ Special thanks to:
 
 Beginner-friendly project for learning computational neuroscience through
 data visualization and neural signal analysis.
+
+NOte: This project uses publicly available datasets
