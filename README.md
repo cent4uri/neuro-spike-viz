@@ -14,13 +14,13 @@ neural signal processing, and scientific data visualization.
 - Interactive analysis with Jupyter Notebook
 - Clean Matplotlib visualizations
 
-## Tech Stack
+## Technologies
 
-- Python 3
+- Python
+- MNE-Python
 - NumPy
 - Matplotlib
-- Jupyter Notebook
-
+  
 ## Project Structure
 
 ```
