@@ -26,7 +26,7 @@ neural signal processing, and scientific data visualization.
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/neuro-spike-visualizer.git
+git clone https://github.com/cent4uri/neuro-spike-visualizer.git
 cd neuro-spike-visualizer
 ```
 
@@ -136,4 +136,4 @@ Special thanks to:
 Beginner-friendly project for learning computational neuroscience through
 data visualization and neural signal analysis.
 
-NOte: This project uses publicly available datasets
+Note: This project uses publicly available datasets
