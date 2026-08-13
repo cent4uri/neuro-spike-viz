@@ -1,9 +1,12 @@
 # Neuro Spike Visualizer (NSV)
 
-An interactive Python project for visualizing neuronal spike trains and
-analyzing neural firing rates using publicly available neuroscience
-datasets. A beginner-friendly introduction to computational neuroscience,
-neural signal processing, and scientific data visualization.
+A Python-based data analysis and visualization project for exploring neuronal spike trains, measuring neural firing activity, and understanding temporal patterns in spike-train data.
+
+Neuro Spike Visualizer (NSV) provides a beginner-friendly workflow for working with neuronal spike data, from loading and analyzing spike timestamps to generating scientific visualizations.
+
+> ** Project Status: In Progress**
+>
+> The core spike-train loading, analysis, and visualization components are being developed incrementally.
 
 ## Features
 
