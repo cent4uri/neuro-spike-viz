@@ -20,9 +20,9 @@ Neuro Spike Visualizer (NSV) provides a beginner-friendly workflow for working w
 ## Technologies
 
 - Python
-- MNE-Python
 - NumPy
 - Matplotlib
+- Jupyter Notebook
 
 ## Installation
 
