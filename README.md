@@ -20,31 +20,6 @@ neural signal processing, and scientific data visualization.
 - MNE-Python
 - NumPy
 - Matplotlib
-  
-## Project Structure
-
-```
-neuro-spike-visualizer/
-│
-├── data/
-│   ├── sample_spikes.csv
-│   └── README.md
-│
-├── notebooks/
-│   └── spike_visualization.ipynb
-│
-├── src/
-│   ├── loader.py
-│   ├── analysis.py
-│   └── visualization.py
-│
-├── images/
-│   └── example_output.png
-│
-├── requirements.txt
-├── LICENSE
-└── README.md
-```
 
 ## Installation
 
