@@ -1,28 +1,33 @@
 # Neuro Spike Visualizer (NSV)
 
-A Python-based data analysis and visualization project for exploring neuronal spike trains, measuring neural firing activity, and understanding temporal patterns in spike-train data.
+A Python-based neuroscience data analysis and visualization project for exploring neuronal spike trains, measuring firing activity, and identifying temporal patterns in neural data.
 
-Neuro Spike Visualizer (NSV) provides a beginner-friendly workflow for working with neuronal spike data, from loading and analyzing spike timestamps to generating scientific visualizations.
+> **Project Status:** In Progress
+> Core spike-train loading, analysis, and visualization features are currently being developed.
 
-> ** Project Status: In Progress**
->
-> The core spike-train loading, analysis, and visualization components are being developed incrementally.
+## Overview
+
+Neuro Spike Visualizer provides a simple workflow for working with neuronal spike-train data. It converts spike timestamps into interpretable visualizations and basic firing-rate measurements, making it easier to explore neural activity across individual and multiple neurons.
 
 ## Features
 
-- Visualize neuronal spike trains over time
-- Compute and display neuron firing rates
-- Generate raster plots and spike histograms
-- Explore activity from different neurons
-- Interactive analysis with Jupyter Notebook
-- Clean Matplotlib visualizations
+* Visualize neuronal spike trains over time
+* Generate spike raster plots
+* Calculate neuron firing rates
+* Analyze spike counts and temporal activity
+* Explore inter-spike interval (ISI) distributions
+* Compare activity across multiple neurons
+* Perform interactive analysis with Jupyter Notebook
+* Create scientific visualizations using Matplotlib
 
 ## Technologies
 
-- Python
-- NumPy
-- Matplotlib
-- Jupyter Notebook
+| Technology       | Purpose                                  |
+| ---------------- | ---------------------------------------- |
+| Python           | Data analysis and project development    |
+| NumPy            | Numerical and array-based computation    |
+| Matplotlib       | Scientific visualization                 |
+| Jupyter Notebook | Interactive analysis and experimentation |
 
 ## Installation
 
@@ -33,25 +38,27 @@ git clone https://github.com/cent4uri/neuro-spike-visualizer.git
 cd neuro-spike-visualizer
 ```
 
-Install the required packages:
+Install the dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Launch Jupyter Notebook:
+Start Jupyter Notebook:
 
 ```bash
 jupyter notebook
 ```
 
-Open:
+Then open:
 
-```
+```text
 notebooks/spike_visualization.ipynb
 ```
 
-## Quick start (without Jupyter)
+## Quick Start
+
+The project can also be used directly from Python:
 
 ```python
 from src import loader, analysis, visualization
@@ -69,26 +76,34 @@ rates = analysis.firing_rates_all(spikes)
 print(rates)
 ```
 
-## Example Visualizations
+## Visualizations
 
-- Spike raster plot
-- Firing rate over time
-- Spike count histogram
-- Inter-spike interval (ISI) distribution
-- Multi-neuron firing rate comparison
+The project currently supports analysis and visualization of:
 
-## Datasets
+* **Spike Raster Plot** — displays individual spike events across neurons and time.
+* **Firing Rate Over Time** — shows changes in neuronal activity across time windows.
+* **Spike Count Histogram** — summarizes spike activity within defined intervals.
+* **ISI Distribution** — explores the time intervals between consecutive spikes.
+* **Multi-Neuron Comparison** — compares firing activity across multiple neurons.
 
-This project ships with a small synthetic dataset (`data/sample_spikes.csv`)
-so it runs immediately with no downloads. It also works with real,
-publicly available neuroscience datasets such as:
+## Dataset
 
-- **Allen Brain Atlas** — https://portal.brain-map.org/
-- **CRCNS** (Collaborative Research in Computational Neuroscience) — https://crcns.org/
+The repository includes a small synthetic dataset:
 
-You may also use your own spike train CSV files. Example format:
-
+```text
+data/sample_spikes.csv
 ```
+
+This allows the project to run immediately without requiring external downloads.
+
+The project can also work with publicly available neuroscience datasets, including:
+
+* **Allen Brain Atlas**
+* **CRCNS — Collaborative Research in Computational Neuroscience**
+
+Example spike-train format:
+
+```text
 neuron_id,spike_time
 1,0.012
 1,0.083
@@ -97,46 +112,44 @@ neuron_id,spike_time
 2,0.210
 ```
 
-See `data/README.md` for more on converting external datasets to this format.
+See `data/README.md` for information about preparing external datasets for use with the project.
 
 ## Learning Objectives
 
-This project helps you learn:
+This project demonstrates practical experience with:
 
-- Neural spike train analysis
-- Firing rate computation
-- Scientific visualization
-- Basic computational neuroscience
-- Working with neuroscience datasets
-- Python data analysis workflows
+* Neural spike-train analysis
+* Firing-rate computation
+* Scientific data visualization
+* Time-series exploration
+* Python data-analysis workflows
+* Working with neuroscience datasets
+* Basic computational neuroscience concepts
 
 ## Future Improvements
 
-- Interactive Plotly visualizations
-- Support for NWB (Neurodata Without Borders) files
-- Animated spike playback
-- Spectral analysis
-- Spike sorting integration
-- GUI using Streamlit
+Planned improvements include:
+
+* Interactive Plotly visualizations
+* NWB file support
+* Animated spike-train playback
+* Spectral and frequency-domain analysis
+* Spike-sorting integration
+* Streamlit-based interactive interface
+* Additional neuroscience datasets
 
 ## References
 
-- Allen Institute for Brain Science — https://portal.brain-map.org/
-- CRCNS Data Sharing Initiative — https://crcns.org/
-- NumPy Documentation — https://numpy.org/
-- Matplotlib Documentation — https://matplotlib.org/
-- Jupyter Documentation — https://jupyter.org/
+* Allen Institute for Brain Science
+* CRCNS Data Sharing Initiative
+* NumPy Documentation
+* Matplotlib Documentation
+* Jupyter Documentation
 
 ## Acknowledgements
 
-Special thanks to:
+This project builds on publicly available neuroscience datasets and the open-source Python scientific-computing ecosystem.
 
-- Allen Institute for Brain Science
-- CRCNS
-- Open-source Python scientific computing community
-- NumPy, Matplotlib, and Jupyter developers
+Developed as a practical project for exploring **neural data analysis, scientific visualization, and computational neuroscience**.
 
-Beginner-friendly project for learning computational neuroscience through
-data visualization and neural signal analysis.
-
-Note: This project uses publicly available datasets
+> **Note:** This project uses publicly available and synthetic datasets for educational and research-oriented analysis.
