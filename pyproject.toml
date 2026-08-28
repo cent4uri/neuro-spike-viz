@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "neuro-spike-visualizer"
+version = "0.2.0"
+description = "Neuroscience spike-train analysis, visualization, and interactive exploration."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+dependencies = [
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "plotly>=5.18",
+    "pynwb>=2.5",
+    "scipy>=1.11",
+    "streamlit>=1.30",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+sorting = ["spikeinterface[full]>=0.100"]
+dev = ["pytest>=7.0", "pytest-cov"]
+all = [
+    "neuro-spike-visualizer[sorting]",
+    "neuro-spike-visualizer[dev]",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
